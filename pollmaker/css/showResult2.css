@@ -1,0 +1,243 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+   min-height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size:14px;
+    /* color:#a09e9c; */
+    text-transform:initial;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+     background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+}
+
+.container {
+    margin: 150px auto 150px auto;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0,0,0,.2);
+    width:65%;
+    padding: 30px 0;
+    border-radius: 10px;
+    
+
+}
+
+header {
+    background-color: #ffffffdb;
+    box-shadow: 0 2px 5px rgba(0,0,0,.2);
+    color: #3F3F3F;
+    width: 100%;
+    min-height: 100px;
+    padding: 0 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+header .webname{
+    color: #8EC5FC;
+    width: 40%;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+header .webname button {
+    padding: 32px 30px;
+    padding-left: 10px;
+}
+
+header .webname button:hover {
+    cursor: pointer;
+}
+
+header .webname img {
+    display: inline-block;
+    height: 35px;
+    width: 35px;
+}
+
+header nav {
+    font: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header button {
+    background-color: transparent;
+    text-align: center;
+    font: inherit;
+    border: none;
+    margin: 0;
+    padding: 32px 30px;
+    border-radius: 0;
+}
+
+header nav button {
+    color: #626262;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+header nav .btn .signup {
+    padding-right: 0;
+}
+
+header nav button:hover {
+    color: #ffffff;
+    cursor: pointer;
+}
+
+header nav button:hover {
+    color: #b28afd;
+    cursor: pointer;
+}
+
+
+
+main {
+    /*flex: 2;*/
+    /*background-color: #ffffff;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: left;
+    padding: 150px 0 100px 0;
+    /*padding-left: 150px;*/
+}
+
+
+
+.question{
+    text-align: center;
+    font-size: 30px;
+    width: 90%;
+    margin: 40px auto 0 auto;
+}
+
+
+
+.responses{
+color: #757575;
+text-align: center;
+margin-bottom: 18px;
+font-size: 20px;
+}
+
+.result{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+text-align: center;
+font-size: 18px;
+
+}
+
+.choice{
+    width: 80%;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+}
+
+#choiceL {
+    flex: 3;
+    text-align: left;
+}
+
+.span{
+    color: #626262a2;
+    flex:2;
+    text-align: right;
+}
+
+progress {
+margin-bottom: 20px;
+margin-top: 5px;
+border-radius: 7px; 
+width: 80%;
+height: 25px;
+box-shadow: .5px .5px 2px rgba( 0, 0, 0, 0.2 );
+}
+
+/* psudo element: It represents the entire progress element. */
+progress::-webkit-progress-bar {
+background-color: rgb(230, 230, 230);
+border-radius: 7px;
+}
+
+/* To style the actual value */
+progress::-webkit-progress-value {
+background:  linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+border-radius: 7px;
+}
+
+  /* To style the actual value for (Firefox browser) */
+progress::-moz-progress-bar {
+    background:  linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+    border-radius: 7px;
+} 
+
+
+@media(max-width:1000px){
+    .choice {
+        flex-direction:column;
+        font-weight:500;
+    }
+
+    .container{
+        width: 70%;
+    }
+
+    #choiceL,.span{
+        text-align: center;
+    }
+
+
+
+}
+
+@media(max-width:768px){
+    .container{
+        width: 65%;
+    }
+
+    .question{
+        font-size: 23px;
+    }
+    .responses{
+        font-size: 17px;
+    }
+
+}
+
+@media (max-width:400px) {
+    .container{
+        width: 80%;
+    }
+    .responses{
+        font-size: 14px;
+    }
+}
+
+
